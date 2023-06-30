@@ -78,21 +78,4 @@ module.exports = (eleventyConfig) => {
 			return eleventyImage.generateHTML(metadata, imageAttributes);
 		}
 	);
-
-	eleventyConfig.addShortcode(
-		"cssBackground",
-		function imageCssBackground(src, selector, widths) {
-			const metadata = syncShortcode(src, widths);
-			let markup = [
-				`${selector} { background-image: url(${metadata.jpeg[0].url});} `,
-			];
-			// i use always jpeg for backgrounds
-			metadata.jpeg.slice(1).forEach((image, idx) => {
-				markup.push(
-					`@media (min-width: ${metadata.jpeg[idx].width}px) { ${selector} {background-image: url(${image.url});}}`
-				);
-			});
-			return markup.join("");
-		}
-	);
 };

@@ -1,6 +1,7 @@
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
+  /* --font-family: Helvetica; */
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -277,4 +278,26 @@ h2 + .header-anchor {
 }
 .portfolio-header {
   height: 250px;
+}
+
+svg {
+  width: auto;
+  height: auto;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+#tooltip-text {
+  font-size: 14px;
+  fill: #ffffff;
+}
+
+#tooltip-rect {
+  fill: #000000;
+  opacity: 0.7;
+}
+
+#monthLabel {
+  fill: #000000;
+  font-size: 15px;
 }
