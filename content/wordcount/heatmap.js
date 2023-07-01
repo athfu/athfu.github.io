@@ -175,7 +175,7 @@ function drawSquares(allCounts, squareSize, padding, svgns, svg) {
 		const maxLight = 90;
 		const minLight = 5;
 
-		const maxSat = 90;
+		const maxSat = 80;
 		const minSat = 5;
 
 		const maxHue = 330;
