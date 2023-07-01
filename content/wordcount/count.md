@@ -9,6 +9,8 @@ eleventyNavigation:
 
 Will I [Hate Writing Less](https://www.sashachapin.com/course-info)? Only time (and this heatmap) will tell.
 
+I built this fun and colourful heatmap to see how many words I write each day.<br>
+
 {% set data %}
 {% include "./wordCount.json" %}
 {% endset %}

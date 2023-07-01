@@ -17,7 +17,7 @@ eleventyNavigation:
   {{ js | safe }} 
 </script>
 
-Tip: you can right click to save it you like it! Reloading the page will generate a new one, just for you!
+Tip: you can right click to save it if you like it! Reloading the page will generate a new one, just for you!
 
 <div id="sketch"></div>
 

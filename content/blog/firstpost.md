@@ -2,7 +2,7 @@
 title: finding my birdsong
 description: This is a post on my blog about finding my voice.
 date: 2023-05-19
-tags:
+tags: ["writing"]
 ---
 
 {% image "../../public/img/hilloftara.jpg", "hilloftara" %}
