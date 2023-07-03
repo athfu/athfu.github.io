@@ -11,9 +11,7 @@ I went for a walk. No headphones. No music or podcasts. No noise. Silence. A sil
 
 So here is a stream of communal sights and sounds which I opened myself up to.
 
-I think my favourite scent might be that of a forest after it rains.
-
-_Petrichor_. The earth smell after it rains.
+I think my favourite scent might be that of a forest after it rains. _Petrichor_. The earth smell after it rains.
 
 Three people sitting side by side on a bench, each reading a book. A fourth, lying on the grass with a book covering their face.
 
