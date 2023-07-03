@@ -56,7 +56,7 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 void main() {
   vec2 st = gl_FragCoord.xy/u_resolution;
-  vec2 mouse = gl_FragCoord.xy/u_mouse;
+  vec2 mouse = st/u_mouse;
   gl_FragColor = vec4(mouse.x, mouse.y, 0.5, 1.0);
 }
 " width="300" height="300"></canvas>
@@ -64,7 +64,7 @@ void main() {
 Playing around with mouse _and_ time.
 
 ```
-  gl_FragColor = vec4(abs(cos(mouse.x)), abs(sin(mouse.y)), 0.5, 1.0);
+  gl_FragColor = vec4(abs(cos(mouse.x)), abs(sin(u_time)), 0.5, 1.0);
 ```
 
 <canvas class="glslCanvas" data-fragment="
@@ -73,10 +73,11 @@ precision mediump float;
 #endif
 uniform vec2 u_resolution;
 uniform vec2 u_mouse;
+uniform float u_time;
 void main() {
   vec2 st = gl_FragCoord.xy/u_resolution;
   vec2 mouse = gl_FragCoord.xy/u_mouse;
-  gl_FragColor = vec4(abs(cos(mouse.x)), abs(sin(mouse.y)), 0.5, 1.0);
+  gl_FragColor = vec4(abs(cos(mouse.x)), abs(sin(u_time)), 0.5, 1.0);
 }
 " width="300" height="300"></canvas>
 
