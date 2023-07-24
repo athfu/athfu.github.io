@@ -115,6 +115,8 @@ module.exports = function (eleventyConfig) {
 		}
 	);
 
+	eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line

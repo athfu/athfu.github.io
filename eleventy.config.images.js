@@ -66,6 +66,9 @@ module.exports = (eleventyConfig) => {
 				widths: widths,
 				formats,
 				outputDir: path.join(eleventyConfig.dir.output, "img"), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
+				sharpOptions: {
+					animated: true,
+				},
 			});
 
 			// TODO loading=eager and fetchpriority=high
@@ -75,6 +78,10 @@ module.exports = (eleventyConfig) => {
 				loading: "eager",
 				decoding: "async",
 			};
+			// TODO remove this when https://github.com/11ty/eleventy-img/pull/182 is fixed
+			if (metadata.gif) {
+				delete metadata.gif[0].height;
+			}
 			return eleventyImage.generateHTML(metadata, imageAttributes);
 		}
 	);
